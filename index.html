@@ -24,7 +24,7 @@
     <nav class="site-nav">
         <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio-head">Studio</span></a>
         <ul class="list navigation">
-            <li class="nav"><a href="./index.html" class="link studia">   Студия</a></li>
+            <li class="nav"><a href="./index.html" class="link current">   Студия</a></li>
             <li class="nav"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="nav"><a href="" class="link">Контакты</a></li>
         </ul>
@@ -58,13 +58,23 @@
         
     <!--Герой-->
    
-    <section 
-    class="hero">
+    <section class="hero">
         <div class="conteiner">
        
         <h1 class="hero-title">Эффективные решения
             для вашего бизнеса </h1>
-        <button type="button" class="button main">Заказать услугу</button>
+        <button type="button" class="button main" data-modal-open>Заказать услугу</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="modal-button" data-modal-close>
+                <svg class="icon-close" width="11" height="11">
+                    <use href="./images/icon2.svg#icon-Vector-2">
+                
+                    </use>
+                </svg>
+            </button>
+            </div>
+        </div>
     </div>
     </section>
 
